@@ -12,7 +12,7 @@ Server.use(morgan('dev'));
 Server.use(cors());
 Server.post('/api', (req, res) => {
   console.log('recieved a request haha', req.body);
-  res.send('nothing');
+  res.send('Server Connected!');
 });
 
 Server.listen(PORT, () => {
